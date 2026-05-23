@@ -110,12 +110,13 @@ main {
     gap: 24px;
 }
 
-.botao {
+.botao, .link-youtube, .link-netflix {
     width: 240px;
     height: 52px;
     border: 1px solid #F1A5B1;
     background-color: transparent;
     color: #fff;
+    text-decoration: none;
     border-radius: 4px;
 
     display: flex;
@@ -129,20 +130,20 @@ main {
     transition: all ease 0.2s;
 }
 
-.botao-primario {
+.botao-primario .link-youtube {
     background-color: #F1A5B1;
     color: #0B0A0A;
 }
 
-.botao-primario:hover, .botao-primario:hover #play-icon path {
+.botao-primario:hover, .link-youtube:hover, .botao-primario:hover #play-icon path {
     color: #f8f8f8;
     background-color: transparent;
     cursor: pointer;
-
+    
     fill: #FFFFFF;
 }
 
-.botao-secundario:hover {
+.botao-secundario .link-netflix:hover {
     background-color: #F1A5B1;
     color: #0B0A0A;
     cursor: pointer;
